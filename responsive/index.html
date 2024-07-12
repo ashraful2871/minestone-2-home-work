@@ -4,16 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive</title>
+    <style>
+        .section-container{
+            border: 2px solid black;
+            height: 587px;
+            display: grid;
+            grid-template-columns: 400px auto;
+            text-align: center;
+            border-radius: 10px;
+            grid-gap: 10px;
+        }
+        .right{
+            background-color: #F4F4DB;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        .left{
+            background-color: #D2D2D2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        @media screen and (max-width:576px) {
+            .section-container{
+                display: grid;
+                /* grid-column: auto; */
+                /* grid-template-columns: 200px auto; */
+                /* grid-template-rows: auto; */
+                display: flex;
+                flex-direction: column
+                
+                
+            }
+            .left{
+                /* height: 130px; */
+                margin-bottom: ;
+                height: 25%;
+                
+            }
+            .right{
+                height: 100%;
+
+            }
+        }
+    </style>
 </head>
 <body>
     <main>
-        <section>
-            <div>
-
+        <section class="section-container">
+            <div class="left">
+                <h1>left</h1>
             </div>
 
-            <div>
-                
+            <div class="right">
+                <h1>right</h1>
             </div>
         </section>
     </main>
